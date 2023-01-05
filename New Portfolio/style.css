@@ -135,6 +135,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   border-radius: 10px;
+  gap: 00px;
 }
 .about-col-1 {
   flex-basis: 35%;
@@ -153,9 +154,15 @@ body {
 }
 
 .subtitle {
+  /* border: 1px solid red; */
   font-size: 5 0px;
   color: black;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.subtitle p {
+  margin-top: 10%;
 }
 
 .tab-titles {
@@ -356,7 +363,7 @@ body {
   margin-top: 30px;
 }
 .contact-left p i {
-  color: var(--secondary);
+  color: var(--primary);
   margin-right: 15px;
   font-size: 20px;
 }
