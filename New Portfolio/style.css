@@ -52,6 +52,13 @@ body {
   color: red;
 }
 
+.header-text p {
+  color: red;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
 /* ------------header----------- */
 
 .header {

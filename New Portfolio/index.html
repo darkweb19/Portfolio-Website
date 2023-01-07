@@ -49,8 +49,8 @@
       <div class="container mine">
         <div class="image-mine">
           <div class="header-text">
-            <p>Developer , Student</p>
-            <h1>Hi, I am <span>Sujan Shrestha</span></h1>
+            <h1>Hi, this is <span>Sujan Shrestha.</span></h1>
+            <p><span class="type-me"></span></p>
           </div>
           <img src="images/sujan.png" alt="" />
         </div>
@@ -284,6 +284,15 @@
       function closemenu() {
         sidemenu.style.right = "-200px";
       }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var type = new Typed(".type-me", {
+        strings: ["Developer", "UX designer", "Learner"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
     </script>
   </body>
 </html>
