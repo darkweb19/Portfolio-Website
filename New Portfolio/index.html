@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,7 +58,7 @@
     </div>
     <!-- ----------------------about----------------------- -->
     <div id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="about-col-1">
             <img src="images/background1.png" alt="error" />
@@ -117,7 +118,7 @@
       <div class="container">
         <h1 class="subtitle">I can help with</h1>
         <div class="services-list">
-          <div>
+          <div data-aos="fade-right">
             <h2>Web Designing</h2>
             <p>
               Able to design single page web applications using React.JS. Can
@@ -126,7 +127,7 @@
             </p>
             <a href="#">Learn More</a>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <h2>Mobile Development</h2>
             <p>
               Familiar with Dart language and can intuively develop beautiful
@@ -134,7 +135,7 @@
             </p>
             <a href="#">Learn More</a>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <h2>DataBase Management</h2>
             <p>
               Enrolled for Harvard based online course names as CS50 for
@@ -150,7 +151,7 @@
       <div class="container">
         <h1 class="subtitle">Past Projects</h1>
         <div class="work-list">
-          <div class="work">
+          <div class="work" data-aos="fade-left">
             <img src="images/work-1.png" alt="" />
             <div class="layer">
               <h3>Ios Devs</h3>
@@ -165,7 +166,7 @@
               ></a>
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="fade-right">
             <img src="images/work-2.png" alt="" />
             <div class="layer">
               <h3>Clean Code</h3>
@@ -178,7 +179,7 @@
               ></a>
             </div>
           </div>
-          <div class="work">
+          <div class="work" data-aos="fade-left">
             <img src="images/work-3.png" alt="" />
             <div class="layer">
               <h3>Web App</h3>
@@ -200,7 +201,7 @@
     <div id="contact">
       <div class="container">
         <div class="row">
-          <div class="contact-left">
+          <div class="contact-left" data-aos="zoom-in">
             <h1 class="subtitle">Reach Me</h1>
             <p><i class="fa-solid fa-envelope"></i>sujanstha3220@gmail.com</p>
             <p><i class="fas fa-phone-square-alt"></i>+977 9814251378</p>
@@ -224,7 +225,7 @@
               >Download CV</a
             >
           </div>
-          <div class="contact-right">
+          <div class="contact-right" data-aos="zoom-out">
             <form action="">
               <input type="text" name="Name" placeholder="your name" required />
               <input
@@ -266,6 +267,14 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
+    </script>
+    <!-- script for aos  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 400,
+      });
     </script>
     <script>
       var sidemenu = document.getElementById("sidemenu");
