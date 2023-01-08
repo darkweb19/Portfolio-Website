@@ -350,7 +350,7 @@ body {
   transition: background 0.5s;
 }
 .btn:hover {
-  background: #ff004f;
+  background: #f7bacd;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
